@@ -62,4 +62,24 @@ describe("Test route POST '/recommendations/:id/upvote'", () => {
   });
 });
 
+describe("Test route POST '/recommendations/:id/downvote'", () => {
+  it("Should return status code 200 when successfully downvoted ", async () => {
+    const recommendation = recommendationFactory();
+    await agent.post("/recommendations").send(recommendation);
+
+    const getRecommendation = await agent.get("/recommendations").send();
+
+    const result = await agent
+      .post(`/recommendations/${getRecommendation.body[0].id}/downvote`)
+      .send();
+    expect(result.status).toBe(200);
+  });
+
+  it(`Should return status code 404 when
+        sent an id that does not exist`, async () => {
+    const result = await agent.post(`/recommendations/${-1}/downvote`).send();
+    expect(result.status).toBe(404);
+  });
+});
+
 afterAll(async () => await disconnectPrisma());
