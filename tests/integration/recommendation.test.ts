@@ -82,4 +82,14 @@ describe("Test route POST '/recommendations/:id/downvote'", () => {
   });
 });
 
+describe("Test route GET '/recommendations'", () => {
+  it("Should return an array", async () => {
+    const recommendation = recommendationFactory();
+    await agent.post("/recommendations").send(recommendation);
+
+    const result = await agent.get("/recommendations").send();
+    expect(result.body).toBeInstanceOf(Array);
+  });
+});
+
 afterAll(async () => await disconnectPrisma());

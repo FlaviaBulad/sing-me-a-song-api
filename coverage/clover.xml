@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664216825831" clover="3.2.0">
-  <project timestamp="1664216825832" name="All files">
-    <metrics statements="132" coveredstatements="90" conditionals="29" coveredconditionals="12" methods="35" coveredmethods="21" elements="196" coveredelements="123" complexity="0" loc="132" ncloc="132" packages="9" files="11" classes="11"/>
+<coverage generated="1664218827131" clover="3.2.0">
+  <project timestamp="1664218827131" name="All files">
+    <metrics statements="132" coveredstatements="96" conditionals="29" coveredconditionals="12" methods="35" coveredmethods="23" elements="196" coveredelements="131" complexity="0" loc="132" ncloc="132" packages="9" files="11" classes="11"/>
     <package name="src">
       <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/src/app.ts">
@@ -28,27 +28,27 @@
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="25" coveredstatements="13" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="3"/>
+      <metrics statements="25" coveredstatements="16" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="4"/>
       <file name="recommendationController.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/src/controllers/recommendationController.ts">
-        <metrics statements="25" coveredstatements="13" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="3"/>
+        <metrics statements="25" coveredstatements="16" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="4"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="cond" truecount="0" falsecount="1"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
@@ -64,9 +64,9 @@
         <metrics statements="6" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="2" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="3" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
       </file>
     </package>
@@ -75,16 +75,16 @@
       <file name="recommendationRepository.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/src/repositories/recommendationRepository.ts">
         <metrics statements="13" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="8" coveredmethods="6"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="36" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="38" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
-        <line num="52" count="4" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="52" count="5" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
         <line num="72" count="1" type="stmt"/>
       </file>
@@ -116,25 +116,25 @@
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="32" coveredstatements="13" conditionals="6" coveredconditionals="2" methods="9" coveredmethods="4"/>
+      <metrics statements="32" coveredstatements="16" conditionals="6" coveredconditionals="2" methods="9" coveredmethods="5"/>
       <file name="recommendationsService.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/src/services/recommendationsService.ts">
-        <metrics statements="32" coveredstatements="13" conditionals="6" coveredconditionals="2" methods="9" coveredmethods="4"/>
+        <metrics statements="32" coveredstatements="16" conditionals="6" coveredconditionals="2" methods="9" coveredmethods="5"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="11" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="11" count="5" type="cond" truecount="1" falsecount="0"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="31" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
-        <line num="38" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
@@ -158,17 +158,17 @@
       <file name="errorUtils.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/src/utils/errorUtils.ts">
         <metrics statements="16" coveredstatements="11" conditionals="20" coveredconditionals="8" methods="6" coveredmethods="4"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="12" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="cond" truecount="3" falsecount="1"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="24" count="2" type="cond" truecount="3" falsecount="1"/>
         <line num="27" count="1" type="stmt"/>
         <line num="28" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="31" count="1" type="stmt"/>
@@ -181,13 +181,13 @@
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
       </file>
       <file name="scenarioFactory.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/tests/factories/scenarioFactory.ts">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
