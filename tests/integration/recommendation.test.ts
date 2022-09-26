@@ -1,5 +1,4 @@
 import { prisma } from "../../src/database";
-import { faker } from "@faker-js/faker";
 import supertest from "supertest";
 import app from "../../src/app";
 
@@ -7,7 +6,6 @@ import recommendationFactory from "../factories/recommendationFactory";
 import {
   clearRecommendationsTable,
   disconnectPrisma,
-  insertRecommendation,
 } from "../factories/scenarioFactory";
 
 const agent = supertest(app);
@@ -100,9 +98,19 @@ describe("Test route GET '/recommendations/random'", () => {
     const result = await agent.get("/recommendations/random").send();
     expect(result.body).toBeInstanceOf(Object);
   });
-  it(`Should return status code 404 when there is still no recommendations posted`, async () => {
+  it(`Should return status code 404 when 0 recommendations posted`, async () => {
     const result = await agent.get("/recommendations/random").send();
     expect(result.status).toBe(404);
+  });
+});
+
+describe("Test route GET '/recommendations/top/:amount'", () => {
+  it("Should return an array when successfull", async () => {
+    const recommendation = recommendationFactory();
+    await agent.post("/recommendations").send(recommendation);
+
+    const result = await agent.get(`/recommendations/top/${5}`).send();
+    expect(result.body).toBeInstanceOf(Array);
   });
 });
 

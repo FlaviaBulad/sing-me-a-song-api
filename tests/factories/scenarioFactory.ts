@@ -7,7 +7,3 @@ export async function clearRecommendationsTable() {
 export async function disconnectPrisma() {
   await prisma.$disconnect();
 }
-
-export async function insertRecommendation(recommendation) {
-  await prisma.recommendation.create({ data: recommendation });
-}
