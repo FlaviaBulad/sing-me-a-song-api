@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1664216159864" clover="3.2.0">
-  <project timestamp="1664216159864" name="All files">
-    <metrics statements="132" coveredstatements="71" conditionals="29" coveredconditionals="6" methods="35" coveredmethods="10" elements="196" coveredelements="87" complexity="0" loc="132" ncloc="132" packages="9" files="11" classes="11"/>
+<coverage generated="1664216576044" clover="3.2.0">
+  <project timestamp="1664216576045" name="All files">
+    <metrics statements="132" coveredstatements="72" conditionals="29" coveredconditionals="6" methods="35" coveredmethods="11" elements="196" coveredelements="89" complexity="0" loc="132" ncloc="132" packages="9" files="11" classes="11"/>
     <package name="src">
       <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/src/app.ts">
@@ -176,7 +176,7 @@
       </file>
     </package>
     <package name="tests.factories">
-      <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
       <file name="recommendationFactory.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/tests/factories/recommendationFactory.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -184,12 +184,12 @@
         <line num="4" count="2" type="stmt"/>
       </file>
       <file name="scenarioFactory.ts" path="/home/flavia/workspace/driven/projects/sing-me-a-song/back-end/tests/factories/scenarioFactory.ts">
-        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
       </file>
