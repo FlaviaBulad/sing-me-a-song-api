@@ -114,4 +114,21 @@ describe("Test route GET '/recommendations/top/:amount'", () => {
   });
 });
 
+describe("Test route GET '/recommendations/:id'", () => {
+  it("Should return an object when successfull", async () => {
+    const recommendation = recommendationFactory();
+    await agent.post("/recommendations").send(recommendation);
+
+    const random = await agent.get("/recommendations/random").send();
+
+    const result = await agent.get(`/recommendations/${random.body.id}`).send();
+    expect(result.body).toBeInstanceOf(Object);
+  });
+
+  it(`Should return status code 404 when trying to get recommendation that does not exist`, async () => {
+    const result = await agent.get(`/recommendations/${-1}`).send();
+    expect(result.status).toBe(404);
+  });
+});
+
 afterAll(async () => await disconnectPrisma());
