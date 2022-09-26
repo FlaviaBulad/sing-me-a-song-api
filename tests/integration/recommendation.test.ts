@@ -83,12 +83,26 @@ describe("Test route POST '/recommendations/:id/downvote'", () => {
 });
 
 describe("Test route GET '/recommendations'", () => {
-  it("Should return an array", async () => {
+  it("Should return an array when successfull", async () => {
     const recommendation = recommendationFactory();
     await agent.post("/recommendations").send(recommendation);
 
     const result = await agent.get("/recommendations").send();
     expect(result.body).toBeInstanceOf(Array);
+  });
+});
+
+describe("Test route GET '/recommendations/random'", () => {
+  it("Should return an object when successfull", async () => {
+    const recommendation = recommendationFactory();
+    await agent.post("/recommendations").send(recommendation);
+
+    const result = await agent.get("/recommendations/random").send();
+    expect(result.body).toBeInstanceOf(Object);
+  });
+  it(`Should return status code 404 when there is still no recommendations posted`, async () => {
+    const result = await agent.get("/recommendations/random").send();
+    expect(result.status).toBe(404);
   });
 });
 
