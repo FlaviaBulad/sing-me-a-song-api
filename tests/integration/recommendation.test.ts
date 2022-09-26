@@ -39,3 +39,4 @@ expect(result.status).toBe(409);
 });
 });
 
+afterAll ( async() => await disconnectPrisma());
